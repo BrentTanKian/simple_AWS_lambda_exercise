@@ -12,7 +12,7 @@ into the landing bucket. The JSON used to specify permissions should look someth
 
 ![alt text](https://github.com/BrentTanKian/simple_AWS_lambda_exercise/blob/main/fixtures/AWSpermissions.PNG)
 
-4. To finally create the lambda function, we use the code found in CSVtoParquetLambda.py file, and assign the IAM role we have just created to the function.
+4. To finally create the lambda function, we use the code found in CSVtoParquetLambda.py file, and assign the IAM role we have just created to the function. (Don't forget to replace the bucket names in the file with the actual names of the buckets you've created!)
 
 5. To configure the lambda function to be triggered by an S3 upload, click on the Add trigger button, and proceed to fill in the suffix as .csv (to only trigger the
 function when a .csv file is uploaded), and for the bucket, select the landing zone bucket because that is where we'll be dumping files to.
